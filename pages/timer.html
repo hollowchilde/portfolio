@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras</title>
+    <link rel="stylesheet" href="../assets/css/timer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+    </style> 
+    <script defer src="/assets/js/timer.js"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./quiz.html">Trivia</a>
+        <a href="" class="active">Timer</a>
+        <a href="./madlibs.html">Creahistoria</a>
+        <a href="./frogge.html">Frogger</a>
+        <a href="./secret.html">El Boton</a>
+        <a href="./phaserpage.html">Phaser 3</a>
+        <a href="./calcu.html">Calcu</a>
+        <a href="/index.html">Volver</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcion_topnav()">≡</a>
+    </div>
+    <div class="wrapper">
+        <div class="stopwatch">00:00:00</div>
+          <div class="controls">
+            <button onclick="start()" class="start-btn btn">Iniciar</button>
+            <button onclick="pause()" class="pause-btn btn">Pausar</button>
+            <button onclick="stop()" class="stop-btn btn">Detener</button>
+            <button onclick="restart()" class="reset-btn btn">Reiniciar</button>  
+            <button onclick="lap()" class="lap-btn btn">Vuelta</button>
+            <button onclick="resetlaps()" class="resetlaps-btn btn">Reiniciar Vueltas</button>  
+          </div>    
+          <ul class="laps">
+        </ul>
+    </div>
+    
+    
+</body>
+</html>

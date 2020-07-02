@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras</title>
+    <link rel="stylesheet" href="/assets/css/madlibs.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+    </style>
+    <script defer src="/assets/js/madlibs.js"></script> 
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./quiz.html">Trivia</a>
+        <a href="./timer.html">Timer</a>
+        <a href="" class="active">Creahistoria</a>
+        <a href="./frogge.html">Frogger</a>
+        <a href="./secret.html">El Boton</a>
+        <a href="./phaserpage.html">Phaser 3</a>
+        <a href="./calcu.html">Calcu</a>
+        <a href="/index.html">Volver</a>
+
+
+        <a href="javascript:void(0);" class="icon" onclick="funcion_topnav()">≡</a>
+    </div>
+    <div class="wrapper">
+        <article class="portfolio">
+            <h2>¡Crea tu historia con un juego de Madlibs!</h2>
+            <p>Completa el formulario debajo y recibirás tu historia personalizada:</p>
+            <form action="./resultados.html">
+                <div>
+                <label for="1">Tu nombre:</label><br>
+                <input type="text" name="a" id="a" required>
+                </div>
+                <div>
+                <label for="2">Cualquier ocupación o puesto de trabajo:</label><br>
+                <input type="text" name="b" id="b" required>
+                </div>
+                <div>
+                <label for="3">Número del 50 al 300:</label><br>
+                <input type="number" name="c" id="c" min="50" max="300" required>
+                </div>
+                <div>
+                <label for="4">Tu exclamación, frase o dicho favorito (negativo):</label><br>
+                <input type="text" name="d" id="d" required>
+                </div>
+                <div>
+                <label for="5">Verbo en infinitivo:</label><br>
+                <input type="text" name="e" id="e" required>
+                </div>
+                <div>
+                <label for="6">Adjetivo plural:</label><br>
+                <input type="text" name="f" id="f" required>
+                </div>
+                <div>
+                <label for="7">Sustantivo plural:</label><br>
+                <input type="text" name="g" id="g" required>
+                </div>
+                <div class="boton">
+                <button class="btn" type="submit">¡Cuéntame mi historia!</button>
+                </div>
+            </form>
+              
+        </article>
+    </div>
+
+</body>
+</html>

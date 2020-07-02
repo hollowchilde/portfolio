@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras</title>
+    <link rel="stylesheet" href="../assets/css/madlibs.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+    </style>
+    <script defer src="/assets/js/madlibs.js"></script> 
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        
+        
+        
+        <a href="./quiz.html">Trivia</a>
+        <a href="./timer.html">Timer</a>
+        <a href="" class="active">Creahistoria</a>
+        <a href="./frogge.html">Frogger</a>
+        <a href="./secret.html">El Boton</a>
+        <a href="./phaserpage.html">Phaser 3</a>
+        <a href="./calcu.html">Calcu</a>
+        <a href="/index.html">Volver</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcion_topnav()">≡</a>
+    </div>
+    <div class="wrapper">
+        <article class="portfolio">
+            <h2>¡Crea tu historia con un juego de Madlibs!</h2>
+            <p>Esta es tu historia:</p>
+            <div class="historia" id="historia">
+                
+            </div>
+            
+            <div class="boton"><a href="./madlibs.html" class="btn">Volver a empezar</a> </div>
+        </article>
+    </div>
+
+    <script>
+        var url_string = window.location.href
+        var url = new URL(url_string);
+        var a = url.searchParams.get("a");
+        var b = url.searchParams.get("b");
+        var c = url.searchParams.get("c");
+        var d = url.searchParams.get("d");
+        var e = url.searchParams.get("e");
+        var f = url.searchParams.get("f");
+        var g = url.searchParams.get("g");
+        let historia = document.getElementById("historia")
+        historia.textContent = a + " acaba de recibir una oferta de trabajo como "+ b +", ganando "+c+" pesos la hora. \"¡"+ d +"!\", dice desconcertadamente. Su nuevo trabajo le obliga a "+e+" y fabricar "+f+" "+g+".";
+    </script>
+</body>
+</html>
